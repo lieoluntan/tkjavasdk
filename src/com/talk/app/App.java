@@ -15,7 +15,6 @@ import java.util.Map;
 
 import org.apache.commons.httpclient.HttpConnection;
 
-import com.sun.jndi.toolkit.url.Uri;
 
 import net.sf.json.JSONObject;
 /**
@@ -36,7 +35,7 @@ public class App {
 	private static int count = 0;
 	private static String serial = "772152415";//¿ÎÌÃºÅ
 	private static String liveserial = "608914470"; //Ö±²¥ºÅ
-	private static Map<String,String> errorDate = new HashMap<>();
+	private static Map<String,String> errorDate = new HashMap<String,String>();
 	private static MD5Util md5 = null;
 	public static void main(String[] args) {
 
@@ -433,7 +432,6 @@ public class App {
 		String url = "http://global.talk-cloud.net/ClientAPI/getserverarea";
 		HttpUtils.httpSends(url, new RequestCallback() {
 			
-			@Override
 			public void callBack(String res) {
 				System.out.println(res);
 			}

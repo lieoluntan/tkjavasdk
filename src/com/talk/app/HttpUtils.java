@@ -95,7 +95,7 @@ public class HttpUtils {
 	 * @return 
 	 */  
 	public static String formUpload(String urlStr, Map<String, String> textMap,  
-			Map<String, String> fileMap) {  
+		Map<String, String> fileMap) {  
 		String res = "";  
 		HttpURLConnection conn = null;  
 		String BOUNDARY = "---------------------------123821742118716"; 

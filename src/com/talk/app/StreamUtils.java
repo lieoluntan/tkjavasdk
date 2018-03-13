@@ -13,7 +13,6 @@ public class StreamUtils {
 		int count = -1;
 		while ((count = in.read(data, 0, BUFFER_SIZE)) != -1)
 			outStream.write(data, 0, count);
-
 		data = null;
 		return new String(outStream.toByteArray(), "utf-8");
 	}
